@@ -1,0 +1,198 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 3vh 3vw;
+}
+
+
+/* header starts */
+header h1{
+  color: orange;
+  margin-left: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav ul {
+  padding-left: 0px;
+}
+
+.nav ul>li , footer ul>li {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav li>a{
+  color: orange;
+  padding: 5px;
+}
+/* header ends */
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+/* about page starts */
+.top-info {
+  margin: 50px 0px;
+}
+
+.pics{
+  max-width: 50%;
+  transition: transform .2s;
+}
+
+.pics:hover {
+  transform: scale(1.1);
+}
+
+.title-card{
+  margin: 30px 0px;
+  padding: 50px;
+  background-color: orange;
+}
+
+.desc-card{
+  margin: 30px 0px;
+  padding: 20px;
+}
+
+.multi-card{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.project-card{
+  background-color: orange;
+  padding: 4vh 3vw;
+  width: 20vw;
+}
+/* about page ends */
+
+
+/* project page starts (modal is listed seperately)*/
+.project-pic-card {
+  margin: 30px 0px;
+}
+.project-pics {
+  width: 40vw;
+  height: 45vh;
+}
+.project-link {
+
+}
+.project-link:hover {
+
+}
+/* project page ends (modal is listed seperately)*/
+
+.lead-card {
+  background-color: orange;
+  padding: 4vh 3vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 20vw;
+  float: none;
+  text-align: center;
+}
+
+/* contact page starts */
+.contact-card {
+  border: 1px solid orange;
+  padding: 4vh 3vw;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  float: none;
+  text-align: center;
+}
+/* contact page ends */
+
+
+/* footer starts */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+}
+
+footer ul {
+  padding-left: 0px;
+}
+
+.fa {
+  padding: 3vw;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.fa-github {
+  color: black;
+}
+.fa-linkedin {
+  color: #007bb5;
+}
+.fa-twitter {
+  color: #55ACEE;
+}
+.fa-envelope-o {
+  color: grey;
+}
+/* footer ends */
+
+
+/* starts modal animation to posted-pic */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+/* ends modal animation to posted-pic */
+
+/* starts modal screen adjustment */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/* ends modal screen adjustment */
