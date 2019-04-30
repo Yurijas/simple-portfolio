@@ -32,6 +32,12 @@ header h1{
 }
 /* header ends */
 
+/* form starts */
+label, input, textarea {
+  display: block;
+}
+
+/* form ends */
 
 /* Tooltip container */
 .tooltip {
