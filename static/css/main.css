@@ -2,13 +2,21 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin: 3vh 3vw;
+  background: linear-gradient(141deg, #ffe4b2 0%, #fff6e5 51%, #ffedcc 75%);
 }
 
 
 /* header starts */
 header h1{
-  color: orange;
+  color: darkorange;
   margin-left: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header-navbar {
+  background-image: linear-gradient(to bottom right, #ffc04c, #fff6e5);
+  opacity: 0.8;
 }
 
 .nav {
@@ -27,9 +35,21 @@ header h1{
 }
 
 .nav li>a{
-  color: orange;
+  color: darkorange;
   padding: 5px;
+  font-size: 1.8rem;
 }
+
+.nav li>a:hover{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.half-card h2{
+  color: white;
+  font-size: 5rem;
+}
+
 /* header ends */
 
 /* form starts */
@@ -71,86 +91,247 @@ label, input, textarea {
   margin: 50px 0px;
 }
 
-.pics{
+/* .pics{
   max-width: 50%;
   transition: transform .2s;
 }
 
 .pics:hover {
   transform: scale(1.1);
+} */
+
+/* .info-image-container {
+  position: relative;
+  width: 50%;
+} */
+
+.info-image {
+  opacity: 0.9;
+  /* display: block; */
+  /* width: 100%; */
+  /* height: auto; */
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-bottom: 20px;
 }
 
-.title-card{
+.image-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.info-image-container:hover .info-image {
+  opacity: 0.3;
+}
+
+.info-image-container:hover .image-middle {
+  opacity: 1;
+}
+
+.image-text {
+  background-color: #ffc04c;
+  color: white;
+  font-size: 12px;
+  padding: 10px 20px;
+}
+
+/* .title-card{
   margin: 30px 0px;
   padding: 50px;
   background-color: orange;
-}
+  text-align: center;
+} */
 
-.desc-card{
+/* .desc-card{
   margin: 30px 0px;
   padding: 20px;
+} */
+
+/* hr.dot-orange {
+  border-top: 1px dotted orange;
 }
 
 .multi-card{
   display: flex;
   justify-content: space-between;
   margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   text-align: center;
 }
 
 .project-card{
-  background-color: orange;
-  padding: 4vh 3vw;
+  padding: 2vh 1vw;
   width: 20vw;
 }
+
+.project-card:hover{
+  background-color: #ffd27f
+}
+
+.project-mini-pics {
+  width: 16vw;
+  height: 17vh;
+  margin-bottom: 10px;
+}
+
+.project-card a{
+  color: black;
+  bottom: 0;
+  font-size: 13px;
+}
+
+.project-card a:hover{
+  text-decoration: none;
+} */
+
 /* about page ends */
 
 
 /* project page starts (modal is listed seperately)*/
-.project-pic-card {
+/* .project-pic-card {
   margin: 30px 0px;
-}
+} */
 .project-pics {
   width: 40vw;
   height: 45vh;
 }
-.project-link {
 
+.flip-card {
+  background-color: transparent;
+  width: 40vw;
+  height: 45vh;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* 3D effect */
+  margin-top: 2rem;
+  opacity: 0.8;
 }
-.project-link:hover {
 
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 40vw;
+  height: 45vh;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-/* project page ends (modal is listed seperately)*/
 
-.lead-card {
-  background-color: orange;
-  padding: 4vh 3vw;
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 40vw;
+  height: 45vh;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #ffd27f;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-image: linear-gradient(to bottom right, darkorange, #ffc966);
+  color: white;
+  transform: rotateY(180deg);
+  padding: 1rem;
+}
+
+.flip-card-back h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+.flip-card-back a {
+  color: darkorange;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.flip-card-back a:hover {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.mini-lead-card {
+  background-color: #ffd27f;
+  padding: 2vh 1vw;
   margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 20vw;
   float: none;
   text-align: center;
 }
 
-/* contact page starts */
-.contact-card {
-  border: 1px solid orange;
+/* project page ends (modal is listed seperately)*/
+
+.lead-card {
+  background-color: #ffd27f;
   padding: 4vh 3vw;
   margin: 0 auto;
+  margin-top: 5rem;
   margin-bottom: 5rem;
+  width: 30vw;
   float: none;
   text-align: center;
 }
+
+.lead-card:hover {
+  background-color: #ffc966;
+}
+
+a>.lead-card {
+  color: white;
+}
+.offset-md-4 a {
+  text-decoration: none;
+}
+
+/* contact page starts */
+.contact-card {
+  border: 1px dotted orange;
+  padding: 4vh 3vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: #ffe4b2;
+  color: #4c3100;
+  font-size: 1.1rem;
+  /* float: none; */
+  /* text-align: center; */
+}
 /* contact page ends */
 
+/* resume page starts */
+.dl-btn {
+  background-color: #ffd27f;
+  padding: 4vh 3vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 30vw;
+  text-align: center;
+}
+/* resume page ends */
 
 /* footer starts */
 footer {
   display: flex;
   justify-content: center;
-  background-color: orange;
+  background-image: linear-gradient(to bottom right, #ffedcc, #ffc04c);
+  opacity: 0.8;
 }
 
 footer ul {
@@ -202,3 +383,17 @@ footer ul {
   }
 }
 /* ends modal screen adjustment */
+
+@media only screen and (max-width: 700px){
+  .title-card {
+    margin: 5px 0px;
+    padding: 5px;
+    width: 30%;
+  }
+  .title-card h2 {
+    font-size: 30%;
+  }
+  .desc-card h5 {
+    font-size: 20%;
+  }
+}

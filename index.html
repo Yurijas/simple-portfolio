@@ -18,7 +18,32 @@
 
   <body>
     <!-- header -->
-    <div class="header-navbar" id="header"></div>
+    <div class="header-navbar" id="header">
+      <header>
+        <h1>JL</h1>
+      </header>
+
+      <div class="nav">
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <!-- about myself (very simple) -->
+      <div class="row top-info">
+        <div class="col-md-7 half-card">
+          <h2>
+            Hi, I'm Julie Seigle. <br />
+            I'm a Web Developer.
+          </h2>
+        </div>
+        <div class="col-md-5 half-card">
+          <!-- <img class="pics" src="../static/images/laptop.jpg" alt="Julie Seigle Photo"> -->
+        </div>
+      </div>
+    </div>
 
     <!-- main -->
     <div class="main-page">
@@ -26,29 +51,125 @@
       <main>
         <div class="row">
           <div class="col-md-12">
-            <!-- about myself (very simple) -->
-            <div class="row top-info">
-              <div class="col-md-7 half-card">
-                <h2>
-                  Hi, I'm Julie Seigle. <br />
-                  I'm a Web Developer.
-                </h2>
+
+            <!-- about myself(more detailed) -->
+
+            <div class="row main-info-top">
+              <div class="col-md-6 main-half-card">
+                <div class="container info-image-container">
+                  <img src="../static/images/Skills.jpg" alt="Skills" class="info-image" style="width:100%">
+                  <div class="image-middle">
+                    <div class="image-text">
+                      <h5>HTML5, CSS3, Python, Flask, JavaScript, React, SQL</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-5 half-card">
-                <img class="pics" src="../static/images/laptop.jpg" alt="Julie Seigle Photo">
+              <div class="col-md-6 main-half-card">
+                <div class="container info-image-container">
+                  <img src="../static/images/Education.jpg" alt="Education" class="info-image" style="width:100%">
+                  <div class="image-middle">
+                    <div class="image-text">
+                      <h5>Kobe City University of Foreign Studies (BA in Spanish)</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- about myself(more detailed) -->
-            <div id="myinfo"></div>
+            <div class="row main-info-bottom">
+              <div class="col-md-6 main-half-card">
+                <div class="container info-image-container">
+                  <img src="../static/images/Experience.jpg" alt="Experience" class="info-image" style="width:100%">
+                  <div class="image-middle">
+                    <div class="image-text">
+                      <h5>Software Developing, Translation/Interpretation, Teaching, Students/Tour Coodinator, Billing Analyst</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 main-half-card">
+                <div class="container info-image-container">
+                  <img src="../static/images/Language.jpg" alt="Language" class="info-image" style="width:100%">
+                  <div class="image-middle">
+                    <div class="image-text">
+                      <h5>Japanese(native), English(fluent), Spanish(intermediate)</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="myinfo">
+              <!-- row1 -->
+              <!-- <div class="row">
+                <div class="col-md-6 title-card">
+                  <h2>Skills</h2>
+                </div>
+                <div class="col-md-6 desc-card">
+                  <h5>HTML5, CSS3, Python, Flask, JavaScript, React, SQL</h5>
+                </div>
+              </div> -->
+              <!-- row2 -->
+              <!-- <div class="row">
+                <div class="col-md-6 title-card">
+                  <h2>Education</h2>
+                </div>
+                <div class="col-md-6 desc-card">
+                  <h5>Kobe City University of Foreign Studies (BA in Spanish)</h5>
+                </div>
+              </div> -->
+              <!-- row3 -->
+              <!-- <div class="row">
+                <div class="col-md-6 title-card">
+                  <h2>Experience</h2>
+                </div>
+                <div class="col-md-6 desc-card">
+                  <h5>Software Developing, Translation/Interpretation, Teaching, Students/Tour Coodinator, Billing Analyst</h5>
+                </div>
+              </div> -->
+              <!-- row4 -->
+              <!-- <div class="row">
+                <div class="col-md-6 title-card">
+                  <h2>Language</h2>
+                </div>
+                <div class="col-md-6 desc-card">
+                  <h5>Japanese(native), English(fluent), Spanish(intermediate)</h5>
+                </div>
+              </div> -->
+            </div>
+
+            <!-- <hr class="dot-orange" /> -->
 
             <!-- lead to projects page -->
+            <div class="row">
+              <div class="col-md-4 offset-md-4">
+                <a href="./projects.html">
+                  <div class="card lead-card">
+                    <h3>See my projects</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+
             <div class="wrapper multi-card">
+              <!-- <div class="project-card">
+                <a href="./projects.html">
+                  <img class="project-mini-pics" src="../static/images/photogram.JPG" alt="Photogram">
+                  <p>Photogram<br />sample</p>
+                </a>
+              </div>
               <div class="project-card">
-                <a href="./projects.html">Photogram<br />sample</a></div>
+                <a href="./projects.html">
+                  <img class="project-mini-pics" src="../static/images/scheduler.JPG" alt="Scheduler">
+                  <p>Scheduler<br />sample</p>
+                </a>
+              </div>
               <div class="project-card">
-                <a href="./projects.html">Scheduler<br />sample</a></div>
-              <div class="project-card">
-                <a href="./projects.html">E-commerce<br />sample</a></div>
+                <a href="./projects.html">
+                  <img class="project-mini-pics" src="../static/images/ecom-twr.JPG" alt="E-commerce">
+                  <p>E-commerce<br />sample</p>
+                </a>
+              </div> -->
             </div>
           </div><!-- ends main col-md-12 -->
         </div><!-- ends main row -->
@@ -56,13 +177,26 @@
     </div><!-- ends container main-page-->
 
     <!-- footer -->
-    <div class="footer-part" id="footer"></div>
+    <div class="footer-part" id="footer">
+      <footer>
+        <ul>
+          <li><a href="https://github.com/Yurijas" target="_blank" class="fa fa-github"></a></li>
+          <li><a href="https://www.linkedin.com/in/julie-seijas-18703393/" target="_blank" class="fa fa-linkedin"></a></li>
+          <li><a href="#" target="_blank" class="fa fa-twitter"></a></li>
+          <li><a href="../contact.html" class="fa fa-envelope-o"></a></li>
+        </ul>
+      </footer>
+      <!-- <p>© 2019 Copyright: Yurijas</p> -->
+    </div>
 
     <!-- jQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap 4 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- js delivery -->
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js -->
     <!-- Own JS -->
     <script src="./static/js/app.js"></script>
   </body>

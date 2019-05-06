@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Find out more about Julie Seigle.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julie Seigle -About- </title>
+    <title>Julie Seigle -Projects- </title>
     <!-- Google Font Montserrat-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Add icon library -->
@@ -18,7 +18,27 @@
 
   <body>
     <!-- header -->
-    <div class="header-navbar" id="header"></div>
+    <div class="header-navbar" id="header">
+      <header>
+        <h1>JL</h1>
+      </header>
+
+      <div class="nav">
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <!-- about projects (very simple) -->
+      <div class="row top-info">
+        <div class="col-md-7 half-card">
+          <h2>My Projects</h2>
+        </div>
+        <div class="col-md-5 half-card"></div>
+      </div>
+    </div>
 
     <!-- main -->
     <div class="main-page">
@@ -26,16 +46,66 @@
       <main>
         <div class="row">
           <div class="col-md-12">
-            <!-- about projects (very simple) -->
-            <div class="row top-info">
-              <div class="col-md-7 half-card">
-                <h2>My Projects</h2>
-              </div>
-              <div class="col-md-5 half-card"></div>
-            </div>
+
             <!-- about projects(more detailed) -->
             <!-- project1 -->
             <div class="row">
+              <div class="col-md-6  project-card">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img class="modal-pic project-pics" src="../static/images/photogram.jpg" alt="photogram">
+                    </div>
+                    <div class="flip-card-back">
+                      <h2>Photogram</h2>
+                      <h5>Creating a photo sharing website, where the users can log in, post photos and make comments using Python, Flask, Bootstrap, JavaScript and Heroku.</h5>
+                      <div class="mini-lead-card">
+                        <a href="https://photogram-share.herokuapp.com/" target="_blank" class="project-link">Visit the page</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- project2 -->
+              <div class="col-md-6  project-card">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img class="modal-pic project-pics" src="../static/images/ecom-twr.jpg" alt="ecommerce">
+                    </div>
+                    <div class="flip-card-back">
+                      <h2>Ecommerce_Twitter</h2>
+                      <h5>Creating an ecommerce website, where the users can log in, post tweet and select and pay for the products using Python, Flask, Bootstrap, Stripe API, and Heroku.</h5>
+                      <div class="mini-lead-card">
+                        <a href="https://twitter-ecommerce12.herokuapp.com/" target="_blank" class="project-link">Visit the page</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- project3 -->
+            <div class="row">
+              <div class="col-md-6  project-card">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img class="modal-pic project-pics" src="../static/images/scheduler.jpg" alt="scheduler">
+                    </div>
+                    <div class="flip-card-back">
+                      <h2>Scheduler</h2>
+                      <h5>Creating  an event scheduler, where the users can make, save and search for the events scheduled using Python, JavaScript, Flask, React.JS and SQLite.</h5>
+                      <div class="mini-lead-card">
+                        <a href="https://event-sched-frontend12.herokuapp.com/" target="_blank" class="project-link">Visit the page</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6  project-card"></div>
+            </div>
+            <!-- project1 -->
+            <!-- <div class="row">
               <div class="col-md-6  project-pic-card">
                 <div class="card-photogram">
                   <img class="modal-pic project-pics" src="../static/images/photogram.jpg" alt="photogram">
@@ -46,9 +116,9 @@
                 <h5>Creating a photo sharing website, where the users can log in, post photos and make comments using Python, Flask, Bootstrap, JavaScript and Heroku.</h5>
                 <a href="https://photogram-share.herokuapp.com/" target="_blank" class="project-link">Visit the page</a>
               </div>
-            </div>
+            </div> -->
             <!-- project2 -->
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-6  project-pic-card">
                 <div class="card-ecommerce">
                   <img class="modal-pic project-pics" src="../static/images/ecom-twr.jpg" alt="ecommerce">
@@ -59,9 +129,9 @@
                 <h5>Creating an ecommerce website, where the users can log in, post tweet and select and pay for the products using Python, Flask, Bootstrap, Stripe API, and Heroku.</h5>
                 <a href="https://twitter-ecommerce12.herokuapp.com/" target="_blank" class="project-link">Visit the page</a>
               </div>
-            </div>
+            </div> -->
             <!-- project3 -->
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-6 project-pic-card">
                 <div class="card-scheduler">
                   <img class="modal-pic project-pics" src="../static/images/scheduler.jpg" alt="scheduler">
@@ -72,11 +142,17 @@
                 <h5>Creating  an event scheduler, where the users can make, save and search for the events scheduled using Python, JavaScript, Flask, React.JS and SQLite.</h5>
                 <a href="https://event-sched-frontend12.herokuapp.com/" target="_blank" class="project-link">Visit the page</a>
               </div>
-            </div>
+            </div> -->
 
             <!-- lead to contact page -->
-            <div class="card lead-card">
-              <a href="./contact.html">Contact me</a>
+            <div class="row">
+              <div class="col-md-4 offset-md-4">
+                <a href="./contact.html">
+                  <div class="card lead-card">
+                    <h3>Contact me</h3>
+                  </div>
+                </a>
+              </div>
             </div>
           </div><!-- ends main col-md-12 -->
         </div><!-- ends main row -->
@@ -84,13 +160,25 @@
     </div><!-- ends container main-page-->
 
     <!-- footer -->
-    <div class="footer-part" id="footer"></div>
+    <div class="footer-part" id="footer">
+      <footer>
+        <ul>
+          <li><a href="https://github.com/Yurijas" target="_blank" class="fa fa-github"></a></li>
+          <li><a href="https://www.linkedin.com/in/julie-seijas-18703393/" target="_blank" class="fa fa-linkedin"></a></li>
+          <li><a href="#" target="_blank" class="fa fa-twitter"></a></li>
+          <li><a href="../contact.html" class="fa fa-envelope-o"></a></li>
+        </ul>
+      </footer>
+    </div>
 
     <!-- jQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap 4 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- js delivery -->
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js -->
     <!-- Own JS -->
     <script src="./static/js/app.js"></script>
   </body>
