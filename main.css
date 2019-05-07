@@ -391,26 +391,6 @@ footer ul {
 }
 /* footer ends */
 
-
-/* starts modal animation to posted-pic */
-.modal-content {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-/* ends modal animation to posted-pic */
-
-/* starts modal screen adjustment */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-/* ends modal screen adjustment */
-
 @media only screen and (max-width: 700px){
   .title-card {
     margin: 5px 0px;
