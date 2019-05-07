@@ -48,6 +48,7 @@ header h1{
 .half-card h2{
   color: white;
   font-size: 5rem;
+  text-shadow: 1px 1px #ffe4b2;
 }
 
 /* header ends */
@@ -108,7 +109,7 @@ label, input, textarea {
 .info-image {
   opacity: 0.9;
   /* display: block; */
-  /* width: 100%; */
+  width: 100%;
   /* height: auto; */
   transition: .5s ease;
   backface-visibility: hidden;
@@ -198,25 +199,29 @@ label, input, textarea {
   margin: 30px 0px;
 } */
 .project-pics {
-  width: 40vw;
-  height: 45vh;
+  width: 350px;
+  height: 350px;
 }
 
 .flip-card {
   background-color: transparent;
-  width: 40vw;
-  height: 45vh;
+  width: 350px;
+  height: 350px;
+  /* width: 40vw;
+  height: 45vh; */
   /* border: 1px solid #f1f1f1; */
   perspective: 1000px; /* 3D effect */
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
   opacity: 0.8;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  width: 40vw;
-  height: 45vh;
+  width: 350px;
+  height: 350px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -230,8 +235,8 @@ label, input, textarea {
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 40vw;
-  height: 45vh;
+  width: 350px;
+  height: 350px;
   backface-visibility: hidden;
 }
 
@@ -247,12 +252,15 @@ label, input, textarea {
   color: white;
   transform: rotateY(180deg);
   padding: 1rem;
+  margin-left: 1rem;
 }
 
 .flip-card-back h2 {
-  font-size: 2rem;
-  text-decoration: underline;
+  font-size: 1.7rem;
+  font-weight: bold;
+  /* text-decoration: underline; */
   margin-top: 2rem;
+  margin-left: 1rem;
 }
 .flip-card-back a {
   color: darkorange;
@@ -270,7 +278,7 @@ label, input, textarea {
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 20vw;
+  width: 17vw;
   float: none;
   text-align: center;
 }
@@ -294,6 +302,7 @@ label, input, textarea {
 
 a>.lead-card {
   color: white;
+  text-shadow: 1px 1px #ffedcc;
 }
 .offset-md-4 a {
   text-decoration: none;
@@ -305,12 +314,30 @@ a>.lead-card {
   padding: 4vh 3vw;
   margin: 0 auto;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 12rem;
+  /* background-image: linear-gradient(to bottom right, #ffe4b2, #ffdb99); */
   background-color: #ffe4b2;
   color: #4c3100;
   font-size: 1.1rem;
   /* float: none; */
   /* text-align: center; */
+}
+
+button {
+  background: #ffd27f;
+  border: 1px #ffc966 solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+}
+/* #ffe4b2 0%, #fff6e5 51%, #ffedcc */
+
+button:hover {
+  border: 1px #ffc04c solid;
+  /* box-shadow: 1px 1px 1px #ffb732; */
+  background: #ffc966;
 }
 /* contact page ends */
 
